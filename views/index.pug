@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title="Logowanie przez Google"
+        link(rel='stylesheet', href='/static/style.css')
+    body
+        include ./header.pug
+        div.container
+            h3.app_name Aplikacja testowa kodilla
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at orci ac velit tempus aliquet in vitae sem. Cras maximus neque vitae sagittis aliquam. Duis ornare sem id rutrum ultrices.
+            div.form
+                p Login:
+                    input(type="text" name="username")
+                p Password:
+                    input(type="password" name="password")
+                button
+                    a(href='/auth/google') Log In
